@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: #605553;
+}
+.site-title{
+    color:#372E29;
+}
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+ul li{
+    list-style: square;
+}
+nav a{
+    text-decoration: none;
+    border: 5px solid brown;
+background-color: #605553;
+color:white;
+}
+nav a:hover{
+    background-color: saddlebrown;
+}
+nav{
+    padding-bottom: 20px;
+}
