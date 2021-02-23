@@ -1,0 +1,179 @@
+html{
+    font-size: 16px;
+}
+/* comment */
+body {
+    padding-top:80px;
+    color:darkslategray;
+    font-family:Arial, Helvetica, sans-serif;
+    background-image: url("../images/white_brick_wall.png");
+    /*background-repeat: no-repeat; */
+    /* background-size: cover; */
+
+}
+h1{
+    color: white;
+}
+/* specificity
+p{
+    background-color: lightblue;
+}
+
+
+/* selectng multiple elements tp apply same style*/
+h1,h2,h3,h4{
+    text-decoration: underline;
+}
+
+/* descendant selector*/
+nav ul{
+    list-style: none;
+}
+/* descendant selector multiple levels*/
+nav ul a{
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/* class name selector */
+.orange-link{
+    background-color:darkslategray;
+    display: inline-block;
+    color:orange;
+    text-decoration: none;
+    width:300px;
+    padding:1.5em;
+    clear:both;
+}
+
+/*float*/
+article, aside{
+    width: 80%;
+    background-color: rgba(255,255, 255,0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float:left;
+}
+aside{
+    width:20px;
+}
+section{
+    clear:both;
+}
+.orange-link.large-text{
+position: absolute;
+right:0;
+bottom:0;
+}
+/* id selector */
+#treatofweek{
+    position:relative;
+    /* clearing the float*/
+   /* background-color:orange; */
+   background: darkslategray url("../images/bread.jpg") no-repeat center center;
+   background-size: cover;
+color:#ccc;
+font-size: 1.5rem;
+padding: 1em 1em 3em 1em;
+/* 1* 1.5rem = 1 * 1.5* 16px = 24px*/
+width: 50%;
+}
+#treatofweek dl ul li:nth-child(n){
+    background-color: transparent;
+}
+
+.large-text{
+    font-size: 20px;
+}
+
+/* child selector or Direct child selector */
+
+article > p{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+/* Adjacent sibling selector */
+
+h3+ul{
+border: 1px solid black;
+}
+
+a[href="#treatofweek"]{
+    font-weight: bold;
+}
+[title*="Executive"] {
+background-color: yellow;
+}
+nav{
+position: fixed;
+top:0;
+left:0;
+width:100%;
+background-color: rgba(0, 0, 0, 0.8);
+z-index:999;
+}
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: orange;
+    /* horizontal vertical blur spread color*/
+    box-shadow: -2px 2px 4px 2px black;
+}
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+nav ul a:active{
+    box-shadow: 0 0 4px 2px black;
+}
+/* display and box sizing */
+nav ul li{
+    display:inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+nav ul li a{
+    display:block;
+}
+/* position related pseudo class selectors */
+aside ul li:first-child{
+    font-weight: bold;
+}
+
+section ol li:last-child{
+    font-weight: bold;
+}
+
+/* nth-child using the formula
+n= 0, 1,2,3,4,5
+even= 2,4,6,8,10
+*/
+
+dl ul li:nth-child(3n+1) {
+    background-color: white;
+}
+/* css specificity */
+footer{
+    background-color: #d5836c;
+    padding: 20px;
+}
+
+body footer{
+    background-color: rgb(0,0,0);
+}
+.site-footer{
+    background-color: cornflowerblue;
+}
+
+footer.site-footer{
+    background-color: rgba(0, 0, 0, 0.1);
+background-
+}
