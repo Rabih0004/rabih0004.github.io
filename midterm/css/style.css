@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+
+font-family: Arial, Helvetica, sans-serif;
+background-color: #822118;
+}
+#body{
+	max-width: 900px;
+	margin:auto;
+	background-color: rgba(255,255,255,0.5);
+}
+ /* The banner image */
+#banner h1 {
+	padding-top: 250px;
+	padding-left: 45%;
+	position:absolute;
+	font-size: 32px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+    }
+#banner{
+	position:relative;
+	background: url("../images/samurai.jpg") no-repeat center center;
+	width: 100%;
+	height: 400px;
+}
+
+/* navigation */
+nav li a {	
+	text-decoration: none;
+	color:#000;
+	display:block;
+	margin-left: 129px;
+	padding-left: 50px;
+	
+	}
+	nav li a:hover{
+
+		color: white;
+	}
+nav li{
+	float:left;
+
+	}
+	nav{
+		margin-top: 10px;
+	}
+	article{
+		padding-top: 50px;
+	}
+	nav .border{
+		
+		border-left: 1px solid black;
+		
+	}
+	nav .bordering{
+		border-left: 1px solid black;
+	}
+	/* added heder with paragraph wrapping the small image aroung */
+	article aside h2{
+font-size:20px;
+font-weight: bold;
+padding:5px;
+	}
+	article aside p{
+		padding: 10px;
+	
+	}
+	article aside img{
+		float:left;
+		padding: 10px;
+		
+	}
+#article h2{
+margin: 5px;
+}
+#article ul li{
+	list-style-type: circle;
+	margin-left: 20px;
+}
+
+/* form */
+#container{
+	margin:10px;
+	border:2px;
+	border-style: solid;
+	width:97%;
+	height:480px;
+}
+h2{
+	margin: 10px;
+}
+#container input{
+	margin: 10px;
+}
+#container, #fullname, #email{
+	width:97%;
+}
+#container textarea{
+	margin: 10px;
+	width:97%;
+}
+.yes, .no, .maybe{
+	display:inline-block;
+
+}
+form label p{
+	margin-top: 7px;
+}
+form .radio label{
+	padding-left: 10px;
+}
+form .radio{
+	float:left;
+	margin-left: 10px;
+}
+p{
+margin: 10px;
+}
+form .input{
+	margin-left: 10px;
+}
+form button{
+	margin-top: 10px;
+margin-left: 10px;
+	float:left;
+
+}
+
+/* footer */
+footer{
+	float:right;
+	margin-right: px;
+}
