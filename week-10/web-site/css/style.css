@@ -217,9 +217,9 @@ html{
 .app .btn{
     float:right;
 }
+}
 @media screen and (min-width: 800px){
 .actions-list li{
     max-width: 20%;
 }
-
 }
