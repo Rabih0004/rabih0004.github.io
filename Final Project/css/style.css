@@ -1,0 +1,469 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-----------------------------preset------------------------*/
+
+
+/*--------------------cutsom css--------------------*/
+
+
+
+/*-----------centered website----------------------*/
+
+h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+body{
+    max-width: 600px;
+	margin: auto;
+    font-family: sans-serif;
+    background-color: #222;
+}
+
+    /*---------------------Navigation-------------------*/
+ 
+
+header .navigation{
+    background-color: #c78b07;
+    height: 192px;
+  margin-top: 50px;
+}
+header .navigation img{
+    padding-top: 10px;
+}
+
+header nav a li{
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+header nav a{
+    text-decoration: none;
+    color: #c78b07;
+}
+
+header nav a li:hover{
+    color:#222;
+    background-color: #c78b07;
+}
+
+/*--------------------search bar-----------------------*/
+header input{
+    width: 520px;
+    margin: 10px;
+    height: 30px;
+    position: relative;
+    display:inline-block;
+}
+header button .fas{
+        color:#c78b07;
+        font-size: 30px;
+}
+header button{
+    background-color: #222;
+    border:solid 1px #c78b07;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: -10px;
+  height: 36px;
+}
+
+/*-------------------banner------------------*/
+
+
+.banner .main-banner .layer{
+    background-color: rba(0, 0, 0, 0.5);
+    position: relative;
+    width: 600px;
+}
+.banner .main-banner{
+    margin-bottom: -2px;
+}
+.banner .main-banner img{
+  width: 600px;
+  position: absolute;
+  margin-top: 5px;
+ 
+}
+ .banner .main-banner .background{
+     position: relative;
+     width: 450px;
+     padding-top: 150px;
+     padding-left: 20px;
+ }
+ .banner .main-banner .background h1{
+     font-size: 3em;
+     font-weight: bold;
+     color: #fff;
+ }
+ .banner .main-banner .background p{
+     color:#fff;
+     font: 1em;
+ }
+ .banner .main-banner .background button{
+     background-color: #c78b07;
+     width: 190px;
+     height: 50px;
+     font-size: 16px;
+ }
+ .banner .main-banner .background button .fas{
+     font-size: 25px;
+    padding-left: 10px;
+ }
+
+.main{
+    
+    padding-top: 70px;
+    background-color: #fff;
+}
+.main .about img{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.main .about-us h2, p{
+    margin:20px;
+}
+.main .about{
+    background-color: #ffe6ac;
+}
+.main .about p{
+    padding-bottom: 10px;
+}
+.main .service{
+    background-color: #fff;
+    margin-top: -20px;
+}
+.main .service h2{
+    padding: 20px;
+}
+.main .service img{
+    width:95%;
+    margin-left: 10px;
+    margin-bottom: -5px;
+}
+.main .digital{
+    background-color: #ffe6ac;
+    height: 170px;
+    width:95%;
+    margin-left: 10px;
+
+}
+.main .digital button{
+    background-color: #222;
+    width: 130px;
+    height: 50px;
+    color:#fff;
+}
+.main .digital h2{
+    padding: 10px;
+}
+.main .digital button{
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.main .digital button .fas{
+    font-size: 15px;
+    padding-left: 10px;
+}
+.main .market{
+    background-color: #fff;
+}
+.main .market img{
+    width: 95%;
+    margin-left: 10px;
+}
+.main .market h2{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.main .market button{
+    background-color: #222;
+    color:#fff;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.main .market button .fas{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.main .video .video-two{
+    background-color: #ffe6ac;
+    width: 95%;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+.main .video img{
+    width: 95%;
+    margin-left: 10px;
+}
+.main .video h2{
+    margin-left: 10px;
+    padding-top: 30px;
+}
+.main .video .video-two button{
+    background-color: #222;
+    width: 130px;
+    height: 50px;
+    color:#fff;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.main .video button .fas{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.main .web .topic{
+    background-color: #ffe6ac;
+    width:95%;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.main .web img{
+width: 95%;
+margin-left: 10px;
+}
+.main .web h2{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+.main .web .topic button{
+    background-color: #222;
+    width:130px;
+    height:50px;
+    color:#fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.main .web .topic button .fas{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.main .print img{
+    width:95%;
+    margin-left: 10px;
+}
+.main .print .print-two{
+    background-color: #ffe6ac;
+    width: 95%;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.main .print .print-two h2{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.main .print .print-two button{
+    background-color: #222;
+    font-size: 16px;
+    color:#fff;
+    height:50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.main .print .print-two button .fas{
+    font-size: 16px;
+   padding-left: 10px;
+}
+.main .vision img{
+    width: 95%;
+    margin-left: 10px;
+
+}
+.main .vision .vision-two{
+margin-top: -250px;
+color:#fff;
+}
+.main .vision .vision-two h2{
+    padding-left: 20px;
+}
+.main .vision .vision-two button{
+    background: #0d1d2f;
+    border-color:#c78b07;
+    color:#fff;
+    width: 50%;
+    height:100px;
+    margin-left: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.main .vision .vision-two button .fas{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.main .team{
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 1.5em;
+}
+.main .john img{
+    margin-top: 20px;
+    margin-left:-10px;
+    width:100%;
+}
+.main .john .john-two{
+    background-color: #ffe6ac;
+    margin-left: -10px;
+    height: 200px;
+    width: 100%;
+    margin-top: -5px;
+}
+.main .john .john-two h2{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.main .john .john-two .caption{
+    margin-top: -3px;
+    font-weight: bold;
+}
+.main .john .john-two hr{
+    border-top: 1px;
+    border-color: #c78b07;
+    border-width: 1px;
+    width: 95%;
+    margin-top: -10px;
+}
+.main .john .john-two p{
+    margin-top: 1px;
+}
+.main .bob{
+    margin-top: 0px;
+}
+.main .bob img{
+    width:100%;
+margin-left: -10px;
+margin-top: 10px;
+}
+.main .bob .bob-two{
+    background-color:#ffe6ac;
+    margin-left: -10px;
+    margin-top: -5px;
+    width:100%;
+    height:200px;
+}
+.main .bob .bob-two h2{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.main .bob .bob-two .caption-two{
+    font-weight: bold;
+    margin-top: -3px;
+    margin-left: 11px;
+}
+.main .bob .bob-two hr{
+    border-top: 1px;
+    border-color: #c78b07;
+    border-width: 1px;
+    width: 95%;
+    margin-top: -10px;
+}
+.main .bob .bob-two p{
+    margin-top: 1px;
+}
+.contact h2{
+    margin: 15px;
+}
+.contact .messege{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: -10px;
+}
+.contact input{
+    width: 95%;
+    margin-left: 10px;
+}
+.contact form .messege-two{
+    margin-top: 10px;
+}
+.contact form textarea{
+    margin-left: 10px;
+    width: 95%;
+}
+.contact form button{
+    background-color: #222;
+    border-color:#c78b07;
+    color: #c78b07;
+    width: 60px;
+    height: 30px;
+margin: 10px;
+}
+.contact form table{
+ margin-left: 10px;
+}
+.contact form table, td, tr{
+    border: 1px solid #000;
+    width: 280px;
+    height: 50px;
+}
+.contact form table tr, .days, .hours{
+    background-color: #ffe6ac;
+    text-align: center;
+    vertical-align: text-top;
+}
+.contact form tr table .date{
+    margin-top: 10px;
+    text-align: center;
+}
+.location iframe{
+    width: 95%;
+    margin-left: 10px;
+}
+footer{
+    background-color: #222;
+}
+footer p, a{
+    color:#c78b07;
+     font-size: 15px;
+}
