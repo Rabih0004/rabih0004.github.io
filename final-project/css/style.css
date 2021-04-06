@@ -119,28 +119,25 @@ header button{
 /*-------------------banner------------------*/
 
 
-.banner .main-banner .layer{
-    background-color: rba(0, 0, 0, 0.5);
-    position: relative;
-    width: 600px;
+.banner{
+    background: url(../images/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 200px;
 }
 .banner .main-banner{
-    margin-bottom: -2px;
-}
-.banner .main-banner img{
-  width: 600px;
-  position: absolute;
-  margin-top: 5px;
- 
-}
+    
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 600px;
+    height: 200px;
+    }
  .banner .main-banner .background{
-     position: relative;
      width: 450px;
-     padding-top: 150px;
+     padding-top: 11px;
      padding-left: 20px;
  }
  .banner .main-banner .background h1{
-     font-size: 3em;
+     width: 250px;
+     font-size: 1.8em;
      font-weight: bold;
      color: #fff;
  }
@@ -153,15 +150,16 @@ header button{
      width: 190px;
      height: 50px;
      font-size: 16px;
+     margin-top: -120px;
  }
  .banner .main-banner .background button .fas{
      font-size: 25px;
     padding-left: 10px;
  }
-
+/*---------------------------main----------------*/
 .main{
     
-    padding-top: 70px;
+    padding-top: 0px;
     background-color: #fff;
 }
 .main .about img{
@@ -412,6 +410,7 @@ margin-top: 10px;
 .main .bob .bob-two p{
     margin-top: 1px;
 }
+/*-------------------------------contact------------------*/
 .contact h2{
     margin: 15px;
 }
@@ -439,27 +438,30 @@ margin-top: 10px;
     height: 30px;
 margin: 10px;
 }
-.contact form table{
- margin-left: 10px;
+/*---------------------table----------------------*/
+.contact table{
+ margin-left: 20px;
 }
-.contact form table, td, tr{
+.contact table, td, tr{
     border: 1px solid #000;
-    width: 280px;
+    width:  550px;
     height: 50px;
 }
-.contact form table tr, .days, .hours{
+.contact table tr .days, .hours{
     background-color: #ffe6ac;
     text-align: center;
-    vertical-align: text-top;
+    padding-top: 10px;
 }
-.contact form tr table .date{
-    margin-top: 10px;
-    text-align: center;
+.contact table tr .date, .time{
+ padding-left: 20px;
+ padding-top: 10px;
 }
+/*--------------------------location-----------------------*/
 .location iframe{
     width: 95%;
-    margin-left: 10px;
+    margin-left: 15px;
 }
+/*--------------------------------footer---------------------*/
 footer{
     background-color: #222;
 }
