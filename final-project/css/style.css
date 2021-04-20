@@ -61,12 +61,12 @@ h2{
 }
 
 body{
-    max-width: 600px;
+    max-width: 1500px;
 	margin: auto;
     font-family: sans-serif;
     background-color: #222;
 }
-
+@media screen and (max-width:500px){
     /*---------------------Navigation-------------------*/
  
 
@@ -119,14 +119,14 @@ header button{
 /*-------------------banner------------------*/
 
 
-.banner{
+.banner .bgimage{
     background: url(../images/main-banner.jpg);
     background-repeat: no-repeat;
     background-size: 600px 200px;
 }
 .banner .main-banner{
     
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 600px;
     height: 200px;
     }
@@ -468,4 +468,323 @@ footer{
 footer p, a{
     color:#c78b07;
      font-size: 15px;
+}
+}
+
+
+/*--------------------------desktop-------------------------*/
+@media screen and (min-width: 600px){
+
+ /*---------------------------header------------------------*/   
+header .navigation{
+    background-color: #222;
+    width: 100%;
+}
+header .navigation img{
+float: left;
+margin-left: 100px;
+width: 70px;
+height: 70px;
+margin-bottom: 10px;
+}
+
+header nav ul a{
+display:inline-block;
+text-decoration: none;
+margin-left: 76px;
+font-size: 16px;
+}
+header nav ul a li{
+    list-style-type: none;
+    color:#c78b07;
+ width: 70px;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+  
+}
+header nav ul a:hover{
+    background-color:#c78b07;
+    height:50px;
+}
+header nav ul a li:hover{
+    color: #222;
+}
+header{
+ padding-bottom: 30px;
+}
+header nav button .fas{
+    color:#c78b07;
+    font-size: 30px;
+}
+header nav button{
+background-color: #222;
+border:solid 1px #c78b07;
+position: absolute;
+margin-top: 10px;
+margin-left: -10px;
+height: 36px;
+}
+header nav input{
+    width: 200px;
+    margin: 10px;
+    height: 30px;
+    position: relative;
+    display:inline-block;
+}
+
+
+/*------------------------------banner-----------------------------------*/
+.banner .bgimage{
+    background: url(../images/main-banner.jpg) no-repeat;
+width:1500px;
+height: 800px;
+}
+.banner .main-banner{
+    background: rgba(0, 0, 0, 0.7);
+    width: 1240px;
+    height:700px;
+    top: 50px;
+    left: 50px;
+    align-items: center;
+    position: relative;
+}
+.banner .background button{
+    background-color: #c78b07;
+    height: 50px;
+}
+.banner .background h1{
+    font-size: 1.8em;
+    color:#fff;
+    font-weight: bold;
+}
+.banner .background p{
+    color: #fff;
+    font-size: 16px;
+}
+.banner .bgimage .main-banner .background{
+    padding-top: 500px;
+    padding-left: 10px;
+}
+/*--------------------main--------------------*/
+.main{
+    width: 1340px;
+}
+.main .about{
+    background-color: #ffe6ac;
+    width: 100%;
+    height: 288px;
+}
+.main .about img{
+    width: 500px;
+    padding-top: 15px;
+    margin-left: 150px;
+ 
+}
+.main .about .about-us{
+    width: 500px;
+    float: right;
+    margin-right: 100px;
+    margin-right: 170px;
+}
+.main .about .about-us h2{
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.main .about .about-us p{
+   font-size: 16px;
+   line-height: 25px;
+}
+.main .about .about-us p:nth-child(3){
+    margin-top: 15px;
+}
+.content{
+    background-color: #fff;
+}
+/*--------------------------------our services-----------------------*/
+.main{
+    display: grid;
+    
+    grid-template-columns: repeat(6,1fr);
+
+    grid-template-areas:
+    "header header header header header header"
+    "digital digital digital marketing marketing marketing"
+    "video video web web print print";
+}
+.main .content{
+    
+}
+
+.main .content .headers{
+    font-size: 2em;
+    font-weight: bold;
+    margin-left: 130px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.main .content .service{
+width: 300px;
+margin-left: 60px;
+grid-area: digital
+}
+.main .content img{
+    width: 200%;
+    margin-bottom: -53px;
+}
+.main .content .digital{
+    background-color: #ffe6ac;
+    height: 200px;
+    width: 200%;
+}
+.main .content .digital h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-top: 52px;
+    text-align: center;
+}
+.main .content .digital p{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.main .content .digital button{
+    background-color: #222;
+    width:100%;
+    color:#fff;
+    height: 60px;
+    font-size: 20px;
+    width: 95%;
+    margin-left: 15px;
+}
+.main .market{
+    width: 300px;
+    margin-right: 357px;
+    grid-area: market;
+}
+.main .content .digital button .fas{
+    margin-left: 10px;
+}
+.main .market .contentt{
+    background-color: #ffe6ac;
+    width: 200%;
+    height: 200px;
+}
+.main .market{
+    display: inline-block;
+}
+.main .market img{
+    width:200%;
+}
+.main .market .contentt h2{
+    font-size: 1.8em;
+    font-weight: bold;
+    padding-top: 52px;
+    text-align: center;
+}
+.main .market .contentt p{
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 14px;
+}
+.main .market .contentt button{
+    background-color: #222;
+    width:100%;
+    color:#fff;
+    height: 60px;
+    font-size: 20px;
+    width: 95%;
+    margin-left: 15px;
+}
+.main .market .contentt button .fas{
+    margin-left: 10px;
+}
+.main .video{
+    margin-left: 58px;
+grid-area: video;
+}
+.main .video img{
+    width: 30%;
+}
+.main .video-two{
+    background-color: #ffe6ac;
+    width: 30%;
+    margin-top: 50px;
+}
+.main .video-two h2{
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.main .video-two p{
+    font-size: 16px;
+}
+.main .video-two button{
+    background-color: #222;
+    color: #fff;
+    width: 97%;
+    margin-left: 5px;
+    height: 50px;
+}
+.main .video-two button .fas{
+    margin-left: 10px;
+}
+.main .web{
+    grid
+}
+.main .web img{
+    width: 30%;
+}
+.main .web .topic{
+    background-color: #ffe6ac;
+    width: 30%;
+    margin-top: 50px;
+}
+.main .web .topic h2{
+    margin-bottom: 10px;
+}
+.main .web .topic button{
+    background-color: #222;
+    height:50px;
+    width: 97%;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.main .print{
+    grid-area: print;
+}
+.main .print img{
+    width:30%;
+
+}
+.main .print .print-two{
+    background-color: #ffe6ac;
+    width: 30%;
+}
+.main .print .print-two h2{
+padding-top: 53px;
+}
+.main .print .print-two p{
+    font-size: 16px;
+}
+.main .print .print-two button{
+    background-color: #222;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
 }
