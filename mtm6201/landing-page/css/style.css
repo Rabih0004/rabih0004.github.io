@@ -1,0 +1,612 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*************************end of preset css***********************************/
+
+/********************custom css********************************************/
+
+
+/**************************aligning the website to the middle*******************************/
+body{
+    margin: auto;
+    max-width:500px;
+}
+
+/***************mobile version**********************************/
+
+@media screen and (min-width: 500px){
+
+.main .logo img{
+	width: 30%;
+	padding-left: 60px;
+}
+.main .header .head{
+	margin-top: 20px;
+	font-size: 60px;
+	width: 253px;
+	padding-left: 70px;
+	font-weight: bold;
+	font-family: montserrat;
+}
+.main .header .start{
+	width: 300px;
+	font-size: 24px;
+	padding-left: 70px;
+	font-family: Montserrat;
+}
+.main .bg{
+	width: 70%;
+	padding-left: 50px;
+	margin-bottom: 10px;
+}
+/*rounded corners for our eyes to easier to follow*/
+.main-two #form{
+	border-radius: 25px;
+	border: none;
+	width: 300px;
+	height: 495px;
+	box-shadow: 10px 5px 20px #333131;
+	margin-bottom: 50px;
+	margin-left: 70px;
+}
+/*moving the placeholder away from border for proper view*/
+.main-two .form ::placeholder{
+	padding-left: 20px;
+}
+.main-two .form form{
+	margin:auto;
+	width:250px;
+}
+.main-two .form form h2{
+	font-size: 40px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	font-family: Montserrat;
+	font-weight: bold;
+}
+.main-two .form form p{
+	font-size: 16px;
+	margin-bottom: 8px;
+	font-family: Montserrat;
+}
+.main-two .form form input{
+	margin-bottom: 10px;
+	background-color: #F4F4F5;
+	border: none;
+	width: 250px;
+	height: 44px;
+}
+.main-two .form button{
+	border-radius: 10px;
+	background-color: #57EEAB;
+	border: none;
+	width: 250px;
+	height: 55px;
+}
+.main-two .form .agree input{
+	width: 25px;
+	height: 25px;
+}
+.main-two .form .agree input p{
+float:left;
+}
+.main-two .form .agree input{
+float: left;
+}
+.main-two .form button p{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	font-family: Montserrat;
+}
+.main-two .form p a{
+	color: #FF8480;
+	font-family: Montserrat;
+}
+.main-two .form .applied{
+	margin-top: 20px;
+}
+footer{
+	background-color: #FFFD8C;
+	width: 100%;
+	height: 300px;
+}
+footer #footer{
+	width: 302px;
+	height: 192px;
+	margin-left: 60px;
+}
+footer .footer h2{
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 20px;
+	width: 220px;
+	margin-bottom: 10px;
+	font-family: Montserrat;
+}
+footer .footer p{
+	width: 297px;
+	font-family: Montserrat;
+	margin-bottom: 10px;
+}
+footer .footer .input{
+	display:flex;
+	margin-bottom: 10px;
+}
+/*moving the placeholder away from border for proper view*/
+footer .footer .input ::placeholder{
+padding-left: 20px;
+}
+
+/* adjusting the width for each input by giving each a class name*/
+footer .footer .input .hour{
+	margin-right: 10px;
+	width:68px;
+	height: 40px;
+}
+footer .footer .input .city{
+	width: 224px;
+	height: 40px;
+}
+footer .footer .input input{
+	border: none;
+	border-radius: 10px;
+margin-bottom: 10px;
+}
+footer .footer button{
+	width: 302px;
+	height: 40px;
+	background-color: #FF8480;
+	border:none;
+border-radius: 10px;
+
+}
+footer .footer button p{
+	font-size: 24px;
+	font-weight: bold;
+	padding-top: 4px;
+	font-family: Montserrat;
+}
+footer #media{
+margin-left: 70px;
+margin-top: 50px;
+}
+/*moved the media logos each individual to have the right space*/
+footer #media img:nth-child(4){
+padding-left: 40px;
+border-radius: 5px;
+}
+footer #media img:nth-child(3){
+	padding-left: 47px;
+	border-radius: 5px;
+}
+footer #media img:nth-child(2){
+	padding-left: 35px;
+}
+footer #media img:nth-child(1){
+padding-left: 20px;
+border-radius: 5px;
+}
+}
+/****************************768px version**********************/
+@media screen and (min-width:768px){
+	.main .logo img{
+		width: 30%;
+		margin-left: -15px;
+	}
+	.main .header h1{
+		margin-top: 20px;
+		font-size: 60px;
+		width: 350px;
+		margin-left: -10px;
+		font-weight: bold;
+		font-family: montserrat;
+		margin-bottom: 20px;
+	}
+	.main .header p{
+		width: 564px;
+		font-size: 24px;
+		margin-left: -10px;
+		font-family: Montserrat;
+	}
+	/* moving the image to aling the over text*/
+	.main .bg{
+		width: 70%;
+		padding-left: 90px;
+		margin-bottom: 10px;
+	}
+	/* giving corner rounded for our eyes to easliy follow*/
+	.main-two #form{
+		border-radius: 25px;
+		border: none;
+		width: 605px;
+		height: 495px;
+		box-shadow: 10px 5px 20px #333131;
+		margin-bottom: 50px;
+		margin-left: -46px;
+	}
+	/*moving placeholder away from the border for proper place*/
+	.main-two .form ::placeholder{
+		padding-left: 20px;
+	}
+
+	.main-two .form form h2{
+		font-size: 40px;
+		margin-bottom: 10px;
+		padding-top: 10px;
+		font-family: Montserrat;
+		font-weight: bold;
+		margin-left: -125px;
+		width: 230px;
+	}
+	.main-two .form form p{
+		font-size: 16px;
+		margin-bottom: 8px;
+		font-family: Montserrat;
+		margin-left: -125px;
+		width:428px;
+	}
+	.main-two .form form input{
+		margin-bottom: 10px;
+		background-color: #F4F4F5;
+		border: none;
+		width: 525px;
+		height: 44px;
+		margin-left: -140px;
+	}
+	.main-two .form button{
+		border-radius: 10px;
+		background-color: #57EEAB;
+		font-family: Montserrat;
+		font-size: 24px;
+		font-weight: bold;
+		border: none;
+		width: 552px;
+		height: 55px;
+		margin-left: -150px;
+	}
+	.main-two .form .agree input{
+		width: 25px;
+		height: 25px;
+		margin-left: -10px;
+	}
+	.main-two .form .agree input p{
+	float:left;
+	}
+	.main-two .form .agree input{
+	float: left;
+	}
+	.main-two .form button p{
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 10px;
+		font-family: Montserrat;
+	}
+	.main-two .form p a{
+		color: #FF8480;
+		font-family: Montserrat;
+	}
+	.main-two .form .applied{
+		margin-top: 20px;
+	}
+	footer{
+		background-color: #FFFD8C;
+		width: 768px;
+		height: 200px;
+		margin-left: -100px;
+		display:flex;
+	}
+	footer .footer{
+		width: 202px;
+		height: 192px;
+		margin-left: 100px;
+		
+	}
+	footer .footer h2{
+		font-size: 18px;
+		font-weight: bold;
+		padding-top: 20px;
+		width: 380px;
+		margin-bottom: 10px;
+		font-family: Montserrat;
+	}
+	footer .footer p{
+		width: 460px;
+		font-family: Montserrat;
+		margin-bottom: 10px;
+	}
+	footer .footer .input{
+		margin-bottom: 10px;
+	}
+	/*moving the placeholder way from border for proper view*/
+	footer .footer .input ::placeholder{
+	padding-left: 20px;
+	}
+	
+	/* separating city input from hour input*/
+	footer .footer .input .hour{
+		margin-right: 10px;
+		width:122px;
+		height: 40px;
+	}
+	footer .footer .input .city{
+		width: 260px;
+		height: 40px;
+	}
+	footer .footer .input input{
+		border: none;
+		border-radius: 10px;
+	margin-bottom: 10px;
+	}
+	footer #footer button{
+		width: 200px;
+		height: 40px;
+		background-color: #FF8480;
+		border:none;
+	border-radius: 10px;
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 330px;
+	
+	}
+	
+	footer #footer #media{
+	margin-left: -2000px;
+	}
+	/*moving media logos each individual to have the right space*/
+	footer .media img:nth-child(4){
+	padding-left: 40px;
+	border-radius: 5px;
+	}
+	footer .media img:nth-child(3){
+		padding-left: 47px;
+		border-radius: 5px;
+	}
+	footer .media img:nth-child(2){
+		padding-left: 35px;
+	}
+	footer .media img:nth-child(1){
+	padding-left: 20px;
+	border-radius: 5px;
+	}
+	}
+
+/*************************Desktop**************************/
+
+@media screen and (min-width: 1280px){
+
+	
+/**** alinging logo, h1, and parahraph in the middle*/
+#main .logo img {
+	width: 30%;
+	margin-left: -200px;
+
+}
+.main .header h1{
+	margin-top: 20px;
+	font-size: 60px;
+	width: 350px;
+	margin-left: -150px;
+	font-weight: bold;
+	font-family: montserrat;
+	margin-bottom: 20px;
+}
+.main .header p{
+	width: 544px;
+	font-size: 24px;
+	margin-left: -150px;
+	font-family: Montserrat;
+}
+.main .bg{
+	width: 70%;
+	margin-left: 100px;
+	margin-bottom: 10px;
+}
+/*giving the corner */
+.main-two .form{
+	border-radius: 25px;
+	border: none;
+	width: 605px;
+	height: 495px;
+	box-shadow: 10px 5px 20px #333131;
+	margin-bottom: 50px;
+	margin-left: -46px;
+}
+/*moving the placeolder from the border*/
+.main-two .form ::placeholder{
+	padding-left: 20px;
+}
+.main-two .form form{
+	width:250px;
+}
+.main-two .form form h2{
+	font-size: 40px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	font-family: Montserrat;
+	font-weight: bold;
+	padding-left: 40px;
+	width: 230px;
+}
+.main-two .form form p{
+	font-size: 16px;
+	margin-bottom: 8px;
+	font-family: Montserrat;
+	padding-left: 40px;
+	width:428px;
+}
+.main-two .form form input{
+	margin-bottom: 10px;
+	background-color: #F4F4F5;
+	border: none;
+	width: 525px;
+	height: 44px;
+}
+.main-two .form button{
+	border-radius: 10px;
+	background-color: #57EEAB;
+	border: none;
+	width: 545px;
+	height: 55px;
+}
+.main-two .form .agree input{
+	width: 25px;
+	height: 25px;
+}
+.main-two .form .agree input p{
+float:left;
+}
+.main-two .form .agree input{
+float: left;
+}
+.main-two .form button p{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	font-family: Montserrat;
+}
+.main-two .form p a{
+	color: #FF8480;
+	font-family: Montserrat;
+}
+.main-two .form .applied{
+	margin-top: 20px;
+}
+footer{
+	background-color: #FFFD8C;
+	width: 768px;
+	height: 200px;
+	margin-left: -100px;
+	display:flex;
+}
+footer .footer{
+	width: 202px;
+	height: 192px;
+	margin-left: 100px;
+	
+}
+footer .footer h2{
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 20px;
+	width: 380px;
+	margin-bottom: 10px;
+	font-family: Montserrat;
+}
+footer .footer p{
+	width: 460px;
+	font-family: Montserrat;
+	margin-bottom: 10px;
+}
+footer .footer .input{
+	display:flex;
+	margin-bottom: 10px;
+}
+/*lightly move the placeholder to the right*/
+footer .footer .input ::placeholder{
+padding-left: 20px;
+}
+
+/* separating city input from hour input*/
+footer .footer .input .hour{
+	margin-right: 10px;
+	width:122px;
+	height: 40px;
+}
+footer .footer .input .city{
+	width: 260px;
+	height: 40px;
+}
+footer .footer .input input{
+	border: none;
+	border-radius: 10px;
+margin-bottom: 10px;
+}
+footer .footer button{
+	width: 200px;
+	height: 40px;
+	background-color: #FF8480;
+	border:none;
+border-radius: 10px;
+font-family: Montserrat;
+font-size: 24px;
+font-weight: bold;
+margin-left: 330px;
+justify-content: flex-end;
+
+}
+/*social media logos*/
+footer .media{
+margin-left: -20px;
+margin-top: 500px;
+}
+/*moved the media logos each individual to have the right space*/
+footer .media img:nth-child(4){
+padding-left: 40px;
+border-radius: 5px;
+}
+footer .media img:nth-child(3){
+	padding-left: 47px;
+	border-radius: 5px;
+}
+footer .media img:nth-child(2){
+	padding-left: 35px;
+}
+footer .media img:nth-child(1){
+padding-left: 20px;
+border-radius: 5px;
+}
+
+
+
+
+}
