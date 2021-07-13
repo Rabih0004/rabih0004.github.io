@@ -1,0 +1,616 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************************end of css preset***************************/
+
+
+/*padding and borders don't go over the width and the height of elements*/
+* {
+	box-sizing: border-box;
+}
+/*****************************mobile view************************************/
+
+
+/*******************************index********************/
+
+/*seprate the header from the content*/
+.main .header {
+	background-color: #2E2E2E;
+	height: 280px;
+
+}
+
+/*ajusting the logo location in the center*/
+.main .header .logo {
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+/*Giving a small gap between logo and nav*/
+.main .header nav {
+	margin-top: 8px;
+}
+
+/*centering the list*/
+.main .header nav ul li {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+
+/*the whole empty area is part of the anchor to the nav*/
+.main .header nav ul li a {
+	display: block;
+	width: 100%;
+	height: 30px;
+	margin-top: 5px;
+	list-style-type: none;
+	color: #fff;
+	font-size: 1.0em;
+	text-decoration: none;
+	font-family: Montserrat, sans-serif;
+	line-height: 30px;
+
+}
+
+/*selection on the hover*/
+.main .header nav ul li a:hover {
+	background-color: darkgoldenrod;
+	width: 100%;
+}
+
+/*responsive the image from different screen size*/
+.main .banner .banner {
+	max-width: 100%;
+	height: auto;
+}
+
+/*footer is displayed flex to make the other containers like inline-block*/
+footer {
+	background-color: #989898;
+	margin-top: -5px;
+	padding-top: 20px;
+	display: flex;
+}
+
+footer .location {
+	display: block;
+	color: #fff;
+	margin-left: 10px;
+	font-family: Montserrat, sans-serif;
+	font-size: 15px;
+}
+
+footer .social {
+	display: inline-block;
+	width: 230px;
+}
+
+footer .social .facebook {
+	width: 20%;
+	height: auto;
+	border-radius: 10px;
+}
+
+footer .social .instagram {
+	width: 20%;
+	height: auto;
+	border-radius: 10px;
+}
+
+footer .links ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	font-family: Montserrat, sans-serif;
+}
+
+/*added hover to show it is a link*/
+footer .links ul li a:hover {
+	color: #000;
+}
+
+footer .links ul li {
+	margin: 10px;
+}
+
+/************************************about*********************/
+.main .bannertwo img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*moved the banner upwards to attach the header*/
+.main .bannertwo .about {
+	margin-top: -200px;
+}
+
+.main .bannertwo .about h1 {
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+	margin-top: 10px;
+	font-family: Montserrat, sans-serif;
+}
+
+.main .bannertwo .about p {
+	color: #fff;
+	margin-left: 5px;
+}
+
+.footer {
+	margin-top: 90px;
+	height: 170px;
+}
+
+/*******************************Menu*********************/
+.icecream {
+	background-color: darkgoldenrod;
+}
+
+/*duplicating the size for all images*/
+.icecream .ice img {
+	width: 50%;
+	height: auto;
+	margin: 20px;
+	border-radius: 10px;
+}
+
+.icecream .ice p {
+	margin-top: 10px;
+}
+
+.icecream .ice {
+	display: flex;
+}
+
+.foot {
+	margin: 0;
+}
+
+/************************contact****************************/
+.form {
+	background-color: darkgoldenrod;
+	height: 385px;
+}
+
+form {
+	padding: 50px;
+}
+
+.form form h1 {
+	font-weight: bold;
+	font-size: 2em;
+	font-family: Montserrat, sans-serif;
+}
+
+/*borders are rounded for the input*/
+.form form input {
+	border-radius: 5px;
+	width: 100%;
+	height: auto;
+}
+
+/*borders are rounded for the textarea*/
+.form form textarea {
+	border-radius: 5px;
+	width: 100%;
+	height: auto;
+}
+
+form label {
+	display: none;
+}
+
+.form form .btn {
+	width: 100px;
+}
+
+/*10px to the right for the placeholder*/
+.form form ::placeholder {
+	padding-left: 10px;
+}
+
+.form .imagetwo .contact {
+	display: none;
+}
+
+/*************************************Tablet view**********************************/
+
+@media screen and (min-width: 768px) {
+
+	/*******************************home************************/
+
+	.main .banner .banner {
+		width: 100%;
+		height: auto;
+	}
+
+	footer .location {
+		margin-left: 20px;
+	}
+
+	footer .links {
+		margin-left: 120px;
+	}
+
+	footer .social {
+		margin-left: 190px;
+	}
+
+	/*************************about****************************/
+	.main .bannertwo img {
+		width: 100%;
+		height: auto;
+	}
+
+	.footer {
+		margin-top: 120px;
+		height: 110px;
+	}
+
+	/*centering the header and paragragh*/
+	.main .banner .about {
+		font-family: Montserrat, sans-serif;
+		width: 90%;
+		text-align: center;
+		margin-left: 30px;
+		margin-top: -220px;
+	}
+
+	/************************************************menu**************************/
+
+	.main nav {
+		margin-top: 10px;
+	}
+
+	.feet {
+		height: 120px;
+		margin-top: -5px;
+	}
+
+	.icecream .ice p {
+		width: 300px;
+		padding-top: 30px;
+	}
+}
+
+/**************************************************desktop******************************/
+
+@media screen and (min-width: 1200px) {
+
+	.maintwo .header {
+		height: 130px;
+		margin-top: -10px;
+	}
+
+	/*logo placed in the left*/
+	.maintwo .header .logotwo img {
+		float: left;
+		margin: 20px;
+	}
+
+	.maintwo .header #nav ul {
+		display: flex;
+	}
+
+	.maintwo .header #nav ul li {
+		margin-left: 100px;
+		margin-top: 50px;
+	}
+
+	.maintwo .header #nav ul li a {
+		text-decoration: none;
+		color: #fff;
+		font-family: Montserrat, sans-serif;
+		margin-left: 70px;
+
+	}
+
+	.maintwo .banner img {
+		margin-top: -10px;
+	}
+
+	footer .social {
+		margin-left: 100px;
+	}
+
+	footer .social .facebook {
+		width: 50%;
+		height: 50%;
+		margin-left: -20px;
+	}
+
+	footer .social .instagram {
+		width: 50%;
+		height: 50%;
+		margin-left: 10px;
+
+	}
+
+	/*making the parent display flex to effect the child*/
+	footer .links ul {
+		display: flex;
+	}
+
+	/*child is effect by the parent and placing the links as row*/
+	footer .links ul li {
+		flex-direction: row;
+		margin-top: 20px;
+	}
+
+	footer .links {
+		margin-left: 100px;
+		display: inline-block;
+	}
+
+	footer .links ul li a {
+		margin-left: 200px;
+	}
+
+	footer .location {
+		margin-left: 50px;
+		margin-top: -15px;
+	}
+
+	/******************************about*******************************/
+	.main .two {
+		margin-top: -19px;
+	}
+
+	.footer {
+		margin-top: 140px;
+		height: 100px;
+	}
+
+	.footer .location {
+		margin-top: 5px;
+	}
+/*defining the width ahd hieght for the social media logos*/
+	.footer .social .facebook {
+		width: 50%;
+		height: 50%;
+		margin-left: -20px;
+	}
+
+	.footer .social .instagram {
+		width: 50%;
+		height: 50%;
+		margin-left: 10px;
+
+	}
+
+	/*****************menu***************/
+
+	.maintwo .header {
+		width: 100%;
+	}
+
+	.maintwo .icecream .chocolate img {
+		margin-left: -120px;
+		width: 780px;
+	}
+
+	.foot {
+		margin-top: -10px;
+	}
+
+	.foot .social {
+		display: inline-flex
+	}
+
+	.foot .social .facebook {
+		width: 50%;
+		height: 50%;
+		margin-left: -20px;
+	}
+
+	.foot .social .instagram {
+		width: 50%;
+		height: 50%;
+		margin-left: 10px;
+
+	}
+
+	/***************************contact*******************/
+/*fill the page with the form*/
+	.form {
+		width: 100%;
+		height: 585px;
+	}
+
+	.form .formtwo {
+		float: left;
+	}
+
+	.form .imagetwo {
+		float: right;
+	}
+
+	.form #fname, #lname {
+		width: 400%;
+		height: 50px;
+	}
+
+	.form #fname, #lname::placeholder {
+		font-size: 20px;
+	}
+
+	.form #message {
+		width: 400%;
+		height: 270px;
+	}
+
+	.form #message::placeholder {
+		font-size: 20px;
+	}
+
+	.form .formtwo .btn {
+		display: block;
+		width: 100px;
+		height: 30px;
+	}
+
+	.feet {
+		width: 100%;
+		height: auto;
+	}
+/*moving the footer to the top and not effecting the other pages with the footer*/
+	.feet .location {
+		margin-top: -15px;
+	}
+
+	.feet .links {
+		margin-left: 100px;
+	}
+
+	.feet .links ul li a {
+		margin-left: 150px;
+	}
+
+	.feet .social {
+		margin-left: 200px;
+	}
+
+	.feet .social .facebook {
+		width: 40%;
+	}
+
+	.feet .social .instagram {
+		width: 40%;
+	}
+}
