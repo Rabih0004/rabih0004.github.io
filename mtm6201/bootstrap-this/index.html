@@ -14,18 +14,23 @@
 
 
     <nav class="navbar .navbar-expand float">
-        <figure class="m-5"><img src="images/logo.png" alt="logo"></figure>
+        <figure class="m-3"><img src="images/logo.jpg" alt="logo"></figure>
         <ul class="nav nav-pills nav-fill">
-            <li class="nav-item m-4">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+            <li class="nav-item m-">
+                <a class="nav-link text-secondary" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item m-4">
-                <a class="nav-link" href="#">About</a>
+            <li class="nav-item m-1">
+                <a class="nav-link text-secondary" href="#">About</a>
             </li>
-            <li class="nav-item m-4">
-                <a class="nav-link" href="#">Contact</a>
+            <li class="nav-item m-1">
+                <a class="nav-link text-secondary" href="#">Contact</a>
             </li>
+            <form class="d-flex">
+                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-info" type="submit">Search</button>
+              </form>
         </ul>
+      
     </nav>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -35,10 +40,10 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="images/bootstrap.png" alt="First slide">
+                <img class="d-block w-100 img-fluid" src="images/bootstrap.png" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/bootstraptwo.jpg" alt="Second slide">
+                <img class="d-block w-100 img-fluid" src="images/bootstraptwo.jpg" alt="Second slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -57,12 +62,13 @@
                 first front-end web improvement. It contains CSS-and JavaScript-based plan layouts for typography,
                 structures, catches, route, and other interface segments.</p>
         </div>
-        <div class="text-center w-50 p-3">
+        <div class="text-center w-50 p-3 ">
             <h2>What is the benefit of using Bootstrap?</h2>
             <p class="text-start">Establishment allows you to modify your site without making it seem to be like
                 different sites that have utilized Foundation. The out of the case CSS configuration is even more a
                 level plan and looks great immediately and you don't need to tweak vigorously. The base CSS appearances
                 are inherent and there will not be a lot of CSS bulge in the HTML.</p>
+        </div>
         </div>
         <div class="row">
             <div class="text-center w-50 p-3">
@@ -75,14 +81,13 @@
 <div class="text-center w-50 p-3">
     <h2>Bootstrap Resposive</h2>
     <p class="text-start">Building a responsive site is a lot simpler utilizing Bootstrap than doing as such without any preparation. Bootstrap accompanies responsive styles, similar to compartments and media questions, to guarantee your site acclimates to the viewport. That implies you don't need to stress over whether your guests are utilizing work areas, tablets, or cell phones.</p>
+    
+</div>
+<div class="d-grid gap-2 d-md-block">
+
+    <button type="button" class="btn btn-info btn-sm ms-5 mb-5" onclick="window.location.href='https://getbootstrap.com/';">More about Bootstrap!</button>
 </div>
         </div>
-
-
-
-
-    </div>
-
     <footer>
         <div class="info container">
             <div class="row">
@@ -90,8 +95,8 @@
                 <div class="col">
                     <p>copyright &copy; Bootstrap 2021 </p>
                 </div>
-                <div class="col"><a href="#">Download</a></div>
-                <div class="col"><a href="#">Themes</a></div>
+                <div class="col "><a Class="nav-link text-secondary" href="https://getbootstrap.com/docs/4.4/getting-started/download/">Download</a></div>
+                <div class="col"><a class="nav-link text-secondary" href="https://themes.getbootstrap.com/">Themes</a></div>
 
             </div>
         </div>
