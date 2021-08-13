@@ -137,7 +137,7 @@ table {
 
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif, nunito;
   background-color: #f4f4f4;
 }
 
@@ -172,6 +172,7 @@ header img{
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+ 
 }
 
 .header li a:hover,
@@ -261,17 +262,21 @@ header img{
   top: 0;
 }
 
-/* 48em = 768px */
 body{
     background: url('images/bg.jpg') no-repeat center center fixed;
     max-width: 100%;
     background-size: cover;
     font-family: 'Nunito', sans-serif;
 }
-
-.main .img img{
+/* homepage banner*/
+.main .image img{
     max-width: 100%;
         margin-top: 100px;
+}
+/*aboutpage banner*/
+.main .img img{
+  max-width: 100%;
+      margin-top: 100px;
 }
 .main .intro h2{
     text-align: center;
@@ -279,18 +284,19 @@ body{
 .main p{
     width: 450px;
     margin-left: 20px;
+    text-align: left;
 }
-footer{
+footer, .push{
     display:flex;
     background-color: #8F8F8F;
       position: absolute;
-  bottom: 1;
   width: 100%;
   height: 3.5rem;
     margin-top: 122px;
 }
 footer .fix{
-    flex-direction: row-reverse;
+    width: 20%;
+    margin-top: 20px;
 }
 footer .links{
     display:grid;
@@ -298,6 +304,9 @@ footer .links{
     padding-top: 5px;
     padding-left: 80px;
     max-width:100%;
+}
+footer .links .site{
+  width: 115%;
 }
 footer .links a{
     text-decoration: none;
@@ -307,17 +316,23 @@ footer .links a:hover{
     color:#4d4f5a;
 }
 footer .socialmedia{
- padding-left: 70px;
+ padding-left: 120px;
     margin-top: 20px;
 }
 footer .socialmedia .fan{
 margin-right: 20px;
 }
+footer .socialbtns{
+  width: 46%;
+  margin-right: 10px;
+  text-align: left;
+}
 /*****************************work.html***************************************/
 
-.work a img{
+.work img{
     max-width: 100%;
     height:auto;
+    margin-bottom: 10px;
 }
 .footer{
     margin-top: -2px;
@@ -432,6 +447,34 @@ ul {
   transition: background-color 2s ease-out;
 }
 
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin-left: 50px;
+  /* padding: 5px; */
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+	max-width: 40px;
+    height: 28px;
+	color: #000;
+	/* background-color: #FFF; */
+	/* border: 1px solid #000; */
+	padding-top: 12px;
+}
+
+.socialbtns .fa:hover {
+	color: #ffffff;
+	/* background-color: #000;
+	border: 1px solid #000; */
+}
 
 /*************************************tablet***********************************/
 @media screen and (min-width: 48em) {
@@ -456,32 +499,99 @@ ul {
     } 
     .main .intro p{
         margin-left: 180px;
+    }
+    footer p{
+      margin-left: 10px;
     } 
     
     footer .links{
         margin-left: 100px;
     }
+
+    footer .links .inks{
+      font-size: 10px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
     footer .socialmedia{
         margin-left: 130px;
     }
-    
-    
+    .work img{
+      width:100%;
+    }
+    footer .socialbtns{
+      margin-left: 120px;
+    }
 }
 
 /***********************desktop*******************************/
 @media screen and (min-width:1024px){
     
-    .main img{
-        margin-left: 200px;
+    .main .image{
+        margin-left: 160px;
+    }
+    .main .intro p{
+      width:80%;
     }
     footer .links{
         display: inline-block;
-        margin-top: 10px;
-        margin-left: 350px;
+        margin-top: 20px;
+        margin-left: 200px;
     }
     
     footer .links .ink{
-        margin-left: 20px;
+        margin-left: 50px;
     }
+    footer .links a{
+      margin-left: 40px;;
+    }
+    footer .links{
+      width: 612px;
+  }
+.main #banner{
+  margin-left: 0px;
+}
+.work{
+  display:grid;
+}
+.work img{
+width:100%;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+footer .socialbtns{
+  margin-left: 130px;
+}
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin-left: 80px;
+  /* padding: 5px; */
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+	max-width: 40px;
+    height: 28px;
+	color: #000;
+	/* background-color: #FFF; */
+	/* border: 1px solid #000; */
+	padding-top: 12px;
+	border-radius: 22px;
+}
+
+.socialbtns .fa:hover {
+	color: #ffffff;
+	/* background-color: #000;
+	border: 1px solid #000; */
+}
+
+
+
+
 }
 
