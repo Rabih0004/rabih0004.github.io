@@ -329,11 +329,14 @@ footer .socialbtns{
 }
 /*****************************work.html***************************************/
 
-.work img{
+/* .work a img{
     max-width: 100%;
     height:auto;
     margin-bottom: 10px;
 }
+.work a:hover{
+  opacity:50%;
+} */
 .footer{
     margin-top: -2px;
 }
@@ -551,10 +554,16 @@ a, a:hover {
 .main #banner{
   margin-left: 0px;
 }
+.main #banner2{
+  margin-left: 350px;
+}
+.main .intro .temp{
+  margin-left: 530px;
+}
 .work{
   display:grid;
 }
-.work img{
+.work a img{
 width:100%;
 }
 
