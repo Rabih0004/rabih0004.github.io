@@ -329,14 +329,14 @@ footer .socialbtns{
 }
 /*****************************work.html***************************************/
 
-/* .work a img{
+.work a img{
     max-width: 100%;
     height:auto;
     margin-bottom: 10px;
 }
 .work a:hover{
   opacity:50%;
-} */
+}
 .footer{
     margin-top: -2px;
 }
