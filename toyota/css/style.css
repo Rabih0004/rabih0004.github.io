@@ -40,19 +40,21 @@ body {
     background-color: #f4f4f4;
   }
   
-  .header .logo {
+  .header a {
     display: block;
     float: left;
     font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
+    height: 80px;
   }
   .header .logo .logo2{
       text-indent: -99999999px;
       background: url('../images/logo.jpg') no-repeat;
       width:160px;
-      height:140px;
-      margin-top: -30px;
+      height:80px;
+      margin-top: 10px;
+      background-size: 100px 100px;
   }
   
   /* menu */
@@ -128,39 +130,19 @@ body {
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-  
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-  }
-  
-
 
 
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   position: relative;
   margin: auto;
 }
 .slideshow-container .fade img{
     margin-top: 190px;
+    border-radius: 10px;
 }
 
 /* Hide the images by default */
@@ -174,7 +156,7 @@ body {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: 240px;
+  margin-top: 205px;
   padding: 16px;
   color: red;
   font-weight: bold;
@@ -233,8 +215,6 @@ body {
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -254,155 +234,483 @@ body {
 .main img{
     max-width:100%;
 }
-/* Wrapper */
-.icon-button {
-	background-color: white;
-	border-radius: 2.6rem;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 1.3rem;
-	height: 2.6rem;
-	line-height: 2.6rem;
-	margin: 0 5px;
-	position: relative;
-	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	width: 2.6rem;
+textarea {
+  resize: none;
 }
 
-/* Circle */
-.icon-button span {
-	border-radius: 0;
-	display: block;
-	height: 0;
-	left: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 0;
-}
-.icon-button:hover span {
-	width: 2.6rem;
-	height: 2.6rem;
-	border-radius: 2.6rem;
-	margin: -1.3rem;
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+white-space: nowrap;
 }
 
-/* Icons */
-.icon-button i {
-	background: none;
-	color: white;
-	height: 2.6rem;
-	left: 0;
-	line-height: 2.6rem;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 2.6rem;
-	z-index: 10;
+.svg-inline--fa {
+vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+display: inline-block;
+position: relative;
+cursor: pointer;
+width: 3.125rem;
+height: 3.125rem;
+border: 0.125rem solid transparent;
+padding: 0;
+text-decoration: none;
+text-align: center;
+color: #fefefe;
+font-size: 1.5625rem;
+font-weight: normal;
+line-height: 2em;
+border-radius: 1.6875rem;
+transition: all 0.5s ease;
+margin-right: 0.25rem;
+margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+        transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+color: #3b5998;
+background: #fefefe;
+border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+color: #55acee;
+background: #fefefe;
+border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+color: #007bb5;
+background: #fefefe;
+border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+color: #bb0000;
+background: #fefefe;
+border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+color: #125688;
+background: #fefefe;
+border-color: #125688;
+}
+.main .section img{
+  border-radius: 10px;
+}
+.main .section p{
+  width: 450px;
+  margin-left: 15px;
+}
+.maintwo{
+  margin-top: -15px;
+}
+.maintwo .section{
+  margin-top: 100px;
+}
+.maintwo .section img{
+  border-radius: 10px;
+  max-width: 100%;
+}
+section .hero-heading{
+  margin-top: 100px;;
+}
+
+/*---------------------------------------------*/
+
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+outline: none;
+border: none; 
+font-family: Helvetica Neue, "Montserrat", sans-serif;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input::-webkit-input-placeholder { color: #bdbdd3;}
+
+
+textarea::-webkit-input-placeholder { color: #bdbdd3;}
+
+
+/*==================================================================
+[ Contact - Area]*/
+
+.container-contact {
+  width: 100%;  
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: transparent;
+}
+
+.wrap-contact {
+  width: 700px;
+  background: transparent;
+  border: 1px solid #b3b3b3;
+  padding: 40px 0px 20px 0px;
+}
+
+.wrap-contact-image {
+  width: 600px;
+  background: transparent;
+  padding: 40px 0px 20px 0px;
+}
+
+/*==================================================================
+[ Contact - Form ]*/
+
+.contact-form {
+  width: 100%;
+}
+
+.error {
+  padding: 5px 9px;
+  border: 1px solid red;
+  color: red;
+  border-radius: 3px;
+}
+ 
+.success {
+  padding: 5px 9px;
+  border: 1px solid green;
+  color: green;
+  border-radius: 3px;
 }
 
 
+/*------------------------------------------------------------------
+[ Input ]*/
 
-
-
-.twitter span {
-	background-color: #4099ff;
-}
-.facebook span {
-	background-color: #3B5998;
-}
-.google-plus span {
-	background-color: #db5a3c;
-}
-.tumblr span {
-	background-color: #34526f;
-}
-.instagram span {
-	background-color: #517fa4;
-}
-.youtube span {
-	background-color: #bb0000;
-}
-.pinterest span {
-	background-color: #cb2027;
+.wrap-input {
+  width: 90%;
+  background-color: #fff;
+  border: 1px solid #b3b3b3;
+  border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 
-
-.icon-button .icon-twitter {
-	color: #4099ff;
-}
-.icon-button .icon-facebook {
-	color: #3B5998;
-}
-.icon-button .fa-tumblr {
-	color: #34526f;
-}
-.icon-button .icon-google-plus {
-	color: #db5a3c;
-}
-.icon-button .fa-instagram {
-	color: #517fa4;
-}
-.icon-button .fa-youtube {
-	color: #bb0000;
-}
-.icon-button .fa-pinterest {
-	color: #cb2027;
+.input {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 31px;
+  color: #8f8fa1;
+  line-height: 1.2;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  height: 42px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: none;
 }
 
+/*---------------------------------------------*/
 
-
-
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus,
-.icon-button:hover .fa-tumblr,
-.icon-button:hover .fa-instagram,
-.icon-button:hover .fa-youtube,
-.icon-button:hover .fa-pinterest {
-	color: white;
+input.input {
+  height: 62px;
+  padding: 0 15px 0 15px;
 }
-@media all and (max-width: 680px) {
-    .icon-button {
-      border-radius: 1.6rem;
-      font-size: 0.8rem;
-      height: 1.6rem;
-      line-height: 1.6rem;
-      width: 1.6rem;
-    }
+
+
+textarea.input {
+  min-height: 169px;
+  padding: 19px 15px 0 15px;
+}
+
+/*------------------------------------------------------------------
+[ Focus Input ]*/
+
+.focus-input {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #fff;
+  pointer-events: none;
   
-    .icon-button:hover span {
-      width: 1.6rem;
-      height: 1.6rem;
-      border-radius: 1.6rem;
-      margin: -0.8rem;
-    }
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.input:focus + .focus-input100 {
+  width: calc(100% + 20px);
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.contact-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 250px;
+  height: 50px;
+  background-color: transparent;
+  border-radius:7px;
+  cursor: pointer;
+
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+.contact-form-btn:hover{
+  color:#000;
+}
+
+.contact-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 7px;
+  background-color: #000;
+  pointer-events: none;
   
-    /* Icons */
-    .icon-button i {
-        height: 1.6rem;
-        line-height: 1.6rem;
-        width: 1.6rem;
-    }
-    body {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-form-btn:hover:before {
+  background-color: #fff;
+}
+
+.validate-input {
+  position: relative;
+}
+
+/*==================================================================
+[ Info Grid]*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px;
+  grid-gap: 100px;
+  padding: 10px 30px 0px 30px;
+}
+
+.grid-container > div {
+  padding: 20px 0;
+  font-size: 10px;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+
+/*==================================================================
+[  Hero title ]*/
+
+
+.listing-hero {
+    background: #CC2936;
+    padding: 101px 0 30px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.hero-heading {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 709px;
+}
+
+section#post-28 {
+    padding-top: 155px;
+}
+
+.hero-large {
+    display: inline-block;
+    width: 40%;
+    font-weight: 300;
+    font-size: 56px;
+    line-height: 56px;
+    position: relative;
+    top: -19px;
+    color: #fff;
+}
+
+.hero-text {
+    display: inline-block;
+    width: 59%;
+    vertical-align: top;
+    border-left: 1px solid #fff;
+    padding: 0 33px;
+    font-size: 15px;
+    line-height: 23px;
+    /* or 153% */
+    /* color: #454545; */
+    vertical-align: top;
+}
+
+
+.hero-text .btn.no-border {
+    margin-top: 15px;
+    margin-bottom: 6.5px;
+    background-image: url(../images/Path3.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    display: block;
+    background-position: right center;
+    max-width: 99px;
+}
+
+.hero-text i {
+    font-style: normal;
+    margin-top: -6px;
+    display: block;
+    color:#fff;
+}
+  /* 48em = 768px */
   
-        padding: 10px;
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
     }
-    .pinterest {
-     display: none; 
+    .header li a {
+      padding: 20px 30px;
     }
-  
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
   }
-  
+@media (min-width: 1024px){
+
+  .slideshow-container .fade img{
+    margin-left: 250px;
+  }
+  .prev, .next{
+margin-top: 330px;
+
+  }
+.maintwo .section img{
+  margin-left: 400px;
+}
+.maintwo .section p{
+  width: 1000px;
+  margin-left: 300px;
+}
+.header .logo .logo2{
+  margin-top: -15px;
+}
+.main .section img{
+  margin-left: 100px;
+}
+.main .section p{
+  width: 1000px;
+  margin-left: 300px;
+  margin-bottom: 30px;
+}
+.main h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+}
