@@ -53,7 +53,7 @@ body {
       background: url('../images/logo.jpg') no-repeat;
       width:160px;
       height:80px;
-      margin-top: 10px;
+      margin-top: -9px;
       background-size: 100px 100px;
   }
   
@@ -236,6 +236,9 @@ body {
 }
 textarea {
   resize: none;
+}
+.main .h1{
+  margin-left: 100px;
 }
 
 .text {

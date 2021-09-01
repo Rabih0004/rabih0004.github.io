@@ -1,0 +1,17 @@
+.column .col{
+    border: red solid 2px;
+    height:100px;
+    width: 100px;
+
+}
+.column{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .column .col:nth-child(6){
+    margin-left: 100px;
+  }
+  /* .column > *{
+    flex: 1 1 10em;
+  } */
