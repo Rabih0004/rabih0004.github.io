@@ -39,3 +39,21 @@ header .armenia .logo{
   margin-top: 200px;
   color: #fff;
 }
+.container .about{
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  font-size: 5em;
+  color:#fff;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.container .info{
+  width: 80%;
+  font-size: 1.5em;
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+  margin-left: 150px;
+  text-align: center;
+  
+}
