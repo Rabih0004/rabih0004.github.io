@@ -15,10 +15,10 @@ header nav{
 header nav ul {
   display: flex;
   justify-content: flex-end;
-  margin-right: 50px;
+  margin-right: 200px;
 }
 header nav ul a {
-  margin-right: 30px;
+  margin-right: 50px;
   flex-direction: row;
   text-decoration: none;
   list-style: none;
@@ -28,7 +28,7 @@ header nav ul a {
 }
 header .armenia .logo{
   width: 80px;
-  margin-left: 50px;
+  margin-left: 200px;
   margin-top: 10px;
 }
 
@@ -56,4 +56,39 @@ header .armenia .logo{
   margin-left: 150px;
   text-align: center;
   
+}
+
+.main{
+  text-align: center;
+}
+
+.main .containerone .titleone{
+  font-size: 2em;
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+}
+.main .containerone p{
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+}
+.main .containertwo .titletwo{
+  font-size: 2em;
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+}
+.main .containertwo p{
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+}
+.main .containerthree .titlethree{
+  font-size: 2em;
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
+}
+.main .containerthree p{
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Source Code Pro', monospace;
 }
