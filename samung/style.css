@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of css rest*/
+
+
+
+.nav {
+    background-color: #252627;
+    width: 100%;
+    height: 80px;
+}
+.nav img{
+    width: 50px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.nav nav{
+    float: right;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+.nav nav ul{
+   display: flex;
+}
+.nav nav ul a{
+    margin-right: 50px;
+    margin-top: 20px;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Source Code Pro', monospace;
+    color: #fff;
+    font-size: 18px;
+}
+.containerone .intro #myvideo{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.containerone h1{
+    position: absolute;
+    font-family: 'Source Code Pro', monospace;
+    top: 500px;
+    left:40%;
+    color: #fff;
+    z-index: 99;
+    font-size: 5em;
+}
+.containertwo{
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 450px;
+}
+.containertwo .about{
+    margin-top: -20px;
+}
+.containertwo .about .headerone{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 3em;
+     font-family: 'Source Code Pro', monospace;
+     margin-bottom: 30px;
+}
+
+.containertwo .about #intro{
+    width: 70%;
+     font-family: 'Source Code Pro', monospace;
+     font-size: 16px;
+     margin-left: 250px;
+}
+
+.containerthree{
+    background-color: #252627;
+    width:100%;
+}
+.containerthree .contact{
+    display:grid;
+    padding-top: 100px;
+    justify-content: center;
+}
+.containerthree .contact h2{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+.containerthree .contact .contacttwo{
+    color: #fff; 
+}
+
+.containerthree .contact #contact li{
+    text-align: center;
+font-size: 18px;
+font-family: 'Source Code Pro', monospace;
+margin-bottom: 5px;
+}
