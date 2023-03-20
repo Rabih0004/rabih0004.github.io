@@ -226,6 +226,7 @@ section {
 .footer-title {
     font-size: 1.3em;
     font-weight: 600;
+    margin-left: 100px;
 }
 
 .footer-title span {
@@ -237,7 +238,8 @@ section {
     padding: 0 12px 0 0;
 }
 footer .social-icons .social{
-    font-size: 2em;
+    font-size: 2.5em;
+    margin-right: 100px;
 }
 
 @media (max-width:1023px){
