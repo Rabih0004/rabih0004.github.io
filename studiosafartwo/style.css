@@ -1,0 +1,378 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.header a img{
+  width: 100px;
+  margin: 5px 0 0 10px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  max-width: 100%;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+/*----------- end of responsive menu (mobile to desktop)--- */
+
+.container-one .container{
+  display: flex;
+  flex-direction: column;
+}
+.container-one .container .right-images{
+margin-right: 100px;
+}
+.main .office-photo{
+    margin-right: 150px;
+}
+.address{
+  text-align: center;
+}
+.office-image{
+  max-width: 10%;
+}
+.container img{
+ margin-left: -70px;
+}
+.image-block{
+  display: inline-block;
+  max-width: 50%;
+  
+}
+.image-block img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+main .intro-text h3{
+  text-align: center;
+  font-family: "Duru Sans", sans-serif;
+  font-size: 1em;
+}
+main{
+  padding-top: 100px;
+}
+main .image-section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+main .image-section a{
+display: inline-block;
+max-width: 80%;
+}
+main .image-section a img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .social{
+  display:flex;
+  gap: 30px;
+}
+footer .link-pages{
+  display: flex;
+  margin-bottom: 30px;
+}
+footer .link-pages a{
+margin-left: 20px;
+}
+footer .big-logo{
+  display: inline-block;
+  max-width: 50%;
+}
+footer .big-logo img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.title{
+  display: flex;
+  padding-top: 100px;
+}
+.title p{
+  text-align: center;
+}
+/*-------------------------------- proejct page----------------*/
+.container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.container .gallery{
+  display: flex;
+  flex-direction: column;
+}
+.container .gallery a{
+  display:inline-block;
+  max-width: 100%;
+  text-decoration: none;
+}
+.container .gallery a figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .gallery a figure img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+/*--------------------news page---------------------*/
+.container-one .block-image .container-info{
+  display:inline-block;
+  max-width: 80%;
+  margin-left: 50px;
+}
+.container-one .block-image .container-info img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container-one .block-image .container-info .caption h3, p{
+  text-align: center;
+  margin-bottom: 30px;
+}
+/*--------------------------------------about page---------------------*/
+.main{
+  padding-top: 100px;
+}
+.main .about-photo{
+  display: inline-block;
+  max-width: 80%;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.main .about-photo img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.main .about-text{
+  display: inline-block;
+  max-width: 90%;
+}
+.main .about-text p{
+  display:block;
+  max-width: 100%;
+  margin-left: 50px;
+}
+.main .about-text h1{
+  text-align: center;
+}
+/*-------------------------contact page--------------------*/
+
+.main-contact{
+  padding-top: 100px;
+}
+.main-contact .email{
+  display:flex;
+  justify-content: center;
+}
+.main-contact .social{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.main-contact .subscribe-card h5{
+  text-align: center;
+}
+.main-contact .form-email{
+  max-width: 50%; /* form will take 50% from the sides*/
+  margin: 0 auto; /* center the form horontally*/
+  padding: 10px;
+  box-sizing: border-box;
+}
+.main-contact .input-email, .send-button{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.main-contact .office-image{
+  display: inline-block;
+  max-width:80%;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.main-contact .office-image img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*-----------------------Omet-----------------------*/
+.con {
+  display: inline-block;
+  max-width: 80%;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+.con img{
+  max-width: 100%;
+  height: auto;
+  margin-left: 50px;
+}
+.introduction{
+  max-width: 100%;
+}
+.introduction h3, p{
+  text-align: center;
+}
+.image-block{
+  display: flex;
+  max-width: 80%;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+.image-block img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+/*----------------------Tablet view-----------------------------*/
+@media only screen and (max-width:768px) {
+  
+}
